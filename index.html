@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Jamia-Tun-Noor — A centre of sacred knowledge and Islamic scholarship. Explore Dars-e-Nizami programs in Fiqh, Hadith, and Tafseer." />
+    <meta name="theme-color" content="#006747" />
+
+    <title>Jamia-Tun-Noor | جامعة النور — Markaz-e-Ilm o Hikmat</title>
+
+    <!-- Preconnect for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
+</head>
+
+<body>
+
+    <!-- ════════════════════════════════════════════
+       HEADER / STICKY NAVBAR
+  ════════════════════════════════════════════ -->
+    <header class="site-header" role="banner" id="site-header">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="Primary Navigation">
+
+                <!-- Logo -->
+                <a href="/" class="navbar__logo" aria-label="Jamia-Tun-Noor Homepage">
+                    <div class="navbar__logo-icon" aria-hidden="true">ن</div>
+                    <div class="navbar__logo-text">
+                        <span class="navbar__logo-en">Jamia-Tun-Noor</span>
+                        <span class="navbar__logo-ur">جامعة النور</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="navbar__nav" aria-label="Site sections">
+                    <ul class="navbar__nav-list" role="list">
+                        <li><a href="#about" class="navbar__nav-link">About</a></li>
+                        <li><a href="#programs" class="navbar__nav-link">Programs</a></li>
+                        <li><a href="#events" class="navbar__nav-link">Events</a></li>
+                        <li><a href="#contact" class="navbar__nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Portal CTA -->
+                <a href="portal/index.html" class="btn-portal" aria-label="Access Student & Teacher Portal">
+                    <svg class="btn-portal__icon" aria-hidden="true" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
+                        <polyline points="10 17 15 12 10 7" />
+                        <line x1="15" y1="12" x2="3" y2="12" />
+                    </svg>
+                    Portal Access
+                </a>
+
+                <!-- Hamburger (mobile) -->
+                <button class="navbar__hamburger" aria-label="Toggle mobile menu" aria-expanded="false"
+                    aria-controls="mobile-nav" id="hamburger-btn" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </nav><!-- /navbar -->
+        </div>
+
+        <!-- Mobile Nav Drawer -->
+        <nav class="navbar__mobile-nav" id="mobile-nav" aria-label="Mobile navigation" role="navigation"
+            aria-hidden="true">
+            <a href="#about" class="navbar__nav-link">About</a>
+            <a href="#programs" class="navbar__nav-link">Programs</a>
+            <a href="#events" class="navbar__nav-link">Events</a>
+            <a href="#contact" class="navbar__nav-link">Contact</a>
+            <a href="portal/login.html" class="btn-portal">Portal Access</a>
+        </nav>
+
+    </header>
+
+    <!-- ════════════════════════════════════════════
+       MAIN CONTENT
+  ════════════════════════════════════════════ -->
+    <main id="main-content">
+
+        <!-- ─── 1. HERO SECTION ─────────────────────────── -->
+        <section class="hero" aria-labelledby="hero-heading" id="hero">
+
+            <!-- Background image (replace src with real image) -->
+            <div class="hero__bg" role="img"
+                aria-label="Majestic Islamic architectural hall with intricate geometric tilework"></div>
+
+            <!-- Dual overlay for depth -->
+            <div class="hero__overlay" aria-hidden="true"></div>
+
+            <!-- Islamic geometric pattern texture -->
+            <div class="hero__pattern" aria-hidden="true"></div>
+
+            <div class="container">
+                <div class="hero__content">
+
+                    <!-- Arabic Calligraphy -->
+                    <blockquote class="hero__calligraphy" lang="ar" dir="rtl" cite="Quran:55">
+                        الرَّحْمَٰنُ ۝ عَلَّمَ الْقُرْآنَ
+                        <cite class="hero__calligraphy-ref">Surah Ar-Rahman — 55:1–2</cite>
+                    </blockquote>
+
+                    <span class="hero__divider" aria-hidden="true"></span>
+
+                    <!-- Main Heading -->
+                    <h1 class="hero__title" id="hero-heading">
+                        Where <em>Sacred Knowledge</em> Meets the Modern Age
+                    </h1>
+
+                    <p class="hero__subtitle">
+                        Jamia-Tun-Noor — a luminous centre of Dars-e-Nizami scholarship, nurturing scholars
+                        in Fiqh, Hadith, and Tafseer with time-honoured methodology and contemporary excellence.
+                    </p>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero__cta-group">
+                        <a href="#programs" class="btn-hero-primary" aria-label="Explore our programs">
+                            Explore Programs
+                            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                        <a href="#about" class="btn-hero-secondary" aria-label="Learn about our legacy">
+                            Our Legacy
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Scroll cue -->
+            <div class="hero__scroll-cue" aria-hidden="true">
+                <span>Scroll</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9" />
+                </svg>
+            </div>
+
+        </section>
+        <!-- /hero -->
+
+
+        <!-- ─── 2. LEGACY SECTION ────────────────────────── -->
+        <section class="legacy" id="about" aria-labelledby="legacy-heading">
+            <div class="container">
+                <div class="legacy__grid">
+
+                    <!-- Visual column -->
+                    <div class="legacy__visual reveal">
+                        <div class="legacy__image-frame">
+
+                            <!-- Replace with <img src="assets/images/madrasa-interior.jpg" alt="..." class="legacy__image" /> -->
+                            <div class="legacy__image-placeholder" role="img"
+                                aria-label="Madrasa interior placeholder image">
+                                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="8" y="16" width="48" height="36" rx="2" />
+                                    <path d="M8 16 L32 4 L56 16" />
+                                    <line x1="24" y1="52" x2="24" y2="36" />
+                                    <line x1="40" y1="52" x2="40" y2="36" />
+                                    <rect x="26" y="36" width="12" height="16" rx="6" />
+                                </svg>
+                                <span>Madrasa Image</span>
+                            </div>
+
+                            <!-- Stat badge -->
+                            <div class="legacy__stat-badge" aria-label="Founded over 25 years ago">
+                                <span class="legacy__stat-number">25+</span>
+                                <p class="legacy__stat-label">Years of Legacy</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Content column -->
+                    <div class="legacy__content">
+                        <p class="section-label" aria-hidden="true">Our Foundation</p>
+
+                        <h2 class="section-title" id="legacy-heading" class="reveal reveal--delay-1">
+                            Markaz-e-Ilm<br />o Hikmat
+                        </h2>
+
+                        <p class="legacy__urdu-name reveal reveal--delay-1" lang="ur" dir="rtl">
+                            مرکزِ علم و حکمت
+                        </p>
+
+                        <span class="gold-divider reveal reveal--delay-2" aria-hidden="true"></span>
+
+                        <p class="legacy__body reveal reveal--delay-2">
+                            Jamia-Tun-Noor was established with a singular vision — to cultivate scholars who carry
+                            the light of Islamic knowledge into every corner of society. Grounded in the classical
+                            tradition of Dars-e-Nizami, our curriculum weaves together the wisdom of the ancients
+                            with the intellectual demands of the contemporary world.
+                        </p>
+
+                        <p class="legacy__body reveal reveal--delay-3">
+                            Our institution has been a trusted sanctuary of learning for over two decades, producing
+                            Ulama, Huffaz, and community leaders who serve with integrity, compassion, and depth of
+                            understanding across Pakistan and beyond.
+                        </p>
+
+                        <!-- Feature list -->
+                        <ul class="legacy__features" role="list">
+
+                            <li class="legacy__feature reveal reveal--delay-2">
+                                <div class="legacy__feature-icon" aria-hidden="true">📖</div>
+                                <div class="legacy__feature-text">
+                                    <strong>Classical Curriculum</strong>
+                                    <span>Authentic Dars-e-Nizami methodology preserved and transmitted with scholarly
+                                        rigour.</span>
+                                </div>
+                            </li>
+
+                            <li class="legacy__feature reveal reveal--delay-3">
+                                <div class="legacy__feature-icon" aria-hidden="true">🌿</div>
+                                <div class="legacy__feature-text">
+                                    <strong>Holistic Development</strong>
+                                    <span>Character, spirituality, and intellectual excellence cultivated in equal
+                                        measure.</span>
+                                </div>
+                            </li>
+
+                            <li class="legacy__feature reveal reveal--delay-4">
+                                <div class="legacy__feature-icon" aria-hidden="true">🤝</div>
+                                <div class="legacy__feature-text">
+                                    <strong>Community Service</strong>
+                                    <span>Graduates serving masajid, madaris, and communities across the nation and
+                                        globally.</span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- /legacy -->
+
+
+        <!-- ─── 3. DARS-E-NIZAMI PROGRAMS GRID ───────────── -->
+        <section class="programs" id="programs" aria-labelledby="programs-heading">
+            <div class="container">
+
+                <header class="programs__header">
+                    <p class="section-label" aria-hidden="true">Dars-e-Nizami</p>
+                    <h2 class="section-title reveal" id="programs-heading">Our Core Sciences</h2>
+                    <span class="gold-divider gold-divider--center reveal reveal--delay-1" aria-hidden="true"></span>
+                    <p class="section-body reveal reveal--delay-2">
+                        Three pillars of Islamic scholarship, taught by senior Ulama in an environment
+                        dedicated to excellence, precision, and spiritual depth.
+                    </p>
+                </header>
+
+                <div class="programs__grid">
+
+                    <!-- Card 1: Fiqh -->
+                    <article class="program-card reveal" aria-labelledby="card-fiqh-title">
+                        <span class="program-card__category" aria-label="Islamic Jurisprudence">
+                            <svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            Jurisprudence
+                        </span>
+
+                        <div class="program-card__icon-wrap" aria-hidden="true">⚖️</div>
+
+                        <h3 class="program-card__title" id="card-fiqh-title">
+                            Fiqh
+                            <span class="program-card__urdu" lang="ur" dir="rtl">فقہ</span>
+                        </h3>
+
+                        <p class="program-card__description">
+                            A comprehensive study of Islamic jurisprudence — from foundational principles of
+                            <em>Usul al-Fiqh</em> to applied rulings across the Hanafi school. Students engage
+                            classical texts including <em>Hidayah</em>, <em>Quduri</em>, and <em>Fatawa Alamgiri</em>
+                            under senior Fuqaha.
+                        </p>
+
+                        <ul class="program-card__meta" role="list" aria-label="Course details">
+                            <li class="program-card__meta-item">
+                                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                4 Years
+                            </li>
+                            <li class="program-card__meta-item">
+                                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                                Hanafi School
+                            </li>
+                        </ul>
+
+                        <a href="portal/programs/fiqh.html" class="program-card__link"
+                            aria-label="Learn more about Fiqh program">
+                            Learn More
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Card 2: Hadith -->
+                    <article class="program-card reveal reveal--delay-1" aria-labelledby="card-hadith-title">
+                        <span class="program-card__category" aria-label="Prophetic Traditions">
+                            <svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            Prophetic Tradition
+                        </span>
+
+                        <div class="program-card__icon-wrap" aria-hidden="true">📜</div>
+
+                        <h3 class="program-card__title" id="card-hadith-title">
+                            Hadith
+                            <span class="program-card__urdu" lang="ur" dir="rtl">حدیث</span>
+                        </h3>
+
+                        <p class="program-card__description">
+                            An in-depth exploration of the Prophetic traditions — covering the sciences of
+                            <em>Mustalah al-Hadith</em>, chain criticism (<em>Rijal</em>), and the study of
+                            the six canonical collections (<em>Kutub al-Sittah</em>). The Daura-e-Hadith is the
+                            crown of the Nizami curriculum.
+                        </p>
+
+                        <ul class="program-card__meta" role="list" aria-label="Course details">
+                            <li class="program-card__meta-item">
+                                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                3 Years
+                            </li>
+                            <li class="program-card__meta-item">
+                                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                                Kutub al-Sittah
+                            </li>
+                        </ul>
+
+                        <a href="portal/programs/hadith.html" class="program-card__link"
+                            aria-label="Learn more about Hadith program">
+                            Learn More
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </article>
+
+                    <!-- Card 3: Tafseer -->
+                    <article class="program-card reveal reveal--delay-2" aria-labelledby="card-tafseer-title">
+                        <span class="program-card__category" aria-label="Quranic Exegesis">
+                            <svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            Quranic Exegesis
+                        </span>
+
+                        <div class="program-card__icon-wrap" aria-hidden="true">🌙</div>
+
+                        <h3 class="program-card__title" id="card-tafseer-title">
+                            Tafseer
+                            <span class="program-card__urdu" lang="ur" dir="rtl">تفسیر</span>
+                        </h3>
+
+                        <p class="program-card__description">
+                            A rigorous study of Quranic exegesis — encompassing linguistic analysis (<em>I'rab</em>),
+                            sciences of revelation (<em>Ulum al-Quran</em>), and classical commentaries including
+                            <em>Tafsir Ibn Kathir</em>, <em>Jalalayn</em>, and <em>Bayan al-Quran</em>.
+                        </p>
+
+                        <ul class="program-card__meta" role="list" aria-label="Course details">
+                            <li class="program-card__meta-item">
+                                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                5 Years
+                            </li>
+                            <li class="program-card__meta-item">
+                                <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                                Classical Texts
+                            </li>
+                        </ul>
+
+                        <a href="portal/programs/tafseer.html" class="program-card__link"
+                            aria-label="Learn more about Tafseer program">
+                            Learn More
+                            <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg>
+                        </a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+        <!-- /programs -->
+
+    </main>
+
+
+    <!-- ════════════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+    <footer class="site-footer" id="contact" role="contentinfo" aria-label="Site Footer">
+        <div class="container">
+
+            <div class="footer__grid">
+
+                <!-- Col 1: Brand & Social -->
+                <div class="footer__brand">
+                    <div class="footer__logo" aria-label="Jamia-Tun-Noor">
+                        <div class="footer__logo-icon" aria-hidden="true">ن</div>
+                        <div class="footer__logo-text">
+                            <span class="footer__logo-en">Jamia-Tun-Noor</span>
+                            <span class="footer__logo-ur" lang="ur">جامعة النور</span>
+                        </div>
+                    </div>
+
+                    <p class="footer__tagline">
+                        Illuminating minds and hearts through the sacred sciences of Islam since
+                        the turn of the century. A beacon of scholarship in the heart of Pakistan.
+                    </p>
+
+                    <nav class="footer__social" aria-label="Social media links">
+                        <!-- Facebook -->
+                        <a href="#" class="footer__social-link" aria-label="Follow us on Facebook"
+                            rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="#" class="footer__social-link" aria-label="Watch on YouTube" rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.4a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" />
+                                <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                            </svg>
+                        </a>
+                        <!-- WhatsApp -->
+                        <a href="#" class="footer__social-link" aria-label="Contact via WhatsApp"
+                            rel="noopener noreferrer">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            </svg>
+                        </a>
+                    </nav>
+                </div>
+
+                <!-- Col 2: Quick Links -->
+                <div class="footer__col">
+                    <h3 class="footer__col-title">Quick Links</h3>
+                    <nav aria-label="Quick links">
+                        <ul class="footer__links" role="list">
+                            <li><a href="#about" class="footer__link">About the Jamia</a></li>
+                            <li><a href="#programs" class="footer__link">Our Programs</a></li>
+                            <li><a href="#" class="footer__link">Admissions</a></li>
+                            <li><a href="#events" class="footer__link">Events & Dars</a></li>
+                            <li><a href="#" class="footer__link">Gallery</a></li>
+                            <li><a href="#contact" class="footer__link">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Col 3: Portal -->
+                <div class="footer__col">
+                    <h3 class="footer__col-title">Portal Access</h3>
+                    <nav aria-label="Portal access links">
+                        <ul class="footer__links" role="list">
+                            <li><a href="portal/login.html" class="footer__link">Student Login</a></li>
+                            <li><a href="portal/teacher.html" class="footer__link">Teacher Portal</a></li>
+                            <li><a href="portal/results.html" class="footer__link">Results & Grades</a></li>
+                            <li><a href="portal/library.html" class="footer__link">Digital Library</a></li>
+                            <li><a href="portal/fees.html" class="footer__link">Fee Management</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <address class="footer__col" id="contact-details">
+                    <h3 class="footer__col-title">Contact Us</h3>
+                    <ul class="footer__contact-items" role="list">
+
+                        <li class="footer__contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                            <span>Jamia-Tun-Noor, Karachi, Sindh, Pakistan</span>
+                        </li>
+
+                        <li class="footer__contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.18 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.08 6.08l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            <a href="tel:+922100000000">+92 21 0000 0000</a>
+                        </li>
+
+                        <li class="footer__contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            <a href="mailto:info@jamia-tun-noor.edu.pk">info@jamia-tun-noor.edu.pk</a>
+                        </li>
+
+                        <li class="footer__contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" aria-hidden="true">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                            <span>Sat – Thu: 8:00 AM – 5:00 PM</span>
+                        </li>
+
+                    </ul>
+                </address>
+
+            </div><!-- /footer__grid -->
+
+        </div>
+
+        <!-- Footer bottom bar -->
+        <div class="footer__bottom">
+            <p class="footer__copyright">
+                &copy; <span id="footer-year">2025</span> Jamia-Tun-Noor. All rights reserved.
+            </p>
+            <nav class="footer__bottom-links" aria-label="Legal links">
+                <a href="portal/privacy.html" class="footer__bottom-link">Privacy Policy</a>
+                <a href="portal/terms.html" class="footer__bottom-link">Terms of Use</a>
+                <a href="portal/sitemap.html" class="footer__bottom-link">Sitemap</a>
+            </nav>
+        </div>
+
+    </footer>
+
+
+    <!-- ════════════════════════════════════════════
+       SCRIPTS
+       Defensive: no innerHTML, event-driven only
+  ════════════════════════════════════════════ -->
+    <script src="js/main.js" defer></script>
+
+    <script>
+        // ── Dynamic copyright year ───────────────────
+        (function () {
+            const el = document.getElementById('footer-year');
+            if (el) {
+                el.textContent = new Date().getFullYear().toString();
+            }
+        })();
+
+        // ── Sticky header shadow ─────────────────────
+        (function () {
+            const header = document.getElementById('site-header');
+            if (!header) return;
+
+            const observer = new IntersectionObserver(
+                function (entries) {
+                    entries.forEach(function (entry) {
+                        header.classList.toggle('is-scrolled', !entry.isIntersecting);
+                    });
+                },
+                { rootMargin: '-72px 0px 0px 0px', threshold: 0 }
+            );
+
+            const sentinel = document.createElement('div');
+            sentinel.setAttribute('aria-hidden', 'true');
+            sentinel.style.cssText = 'position:absolute;top:0;left:0;width:1px;height:1px;pointer-events:none;';
+            document.body.prepend(sentinel);
+            observer.observe(sentinel);
+        })();
+
+        // ── Mobile nav toggle ────────────────────────
+        (function () {
+            const btn = document.getElementById('hamburger-btn');
+            const drawer = document.getElementById('mobile-nav');
+            if (!btn || !drawer) return;
+
+            btn.addEventListener('click', function () {
+                const isOpen = btn.getAttribute('aria-expanded') === 'true';
+                btn.setAttribute('aria-expanded', String(!isOpen));
+                drawer.setAttribute('aria-hidden', String(isOpen));
+                drawer.classList.toggle('is-open', !isOpen);
+            });
+
+            // Close drawer when a nav link is tapped
+            drawer.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', function () {
+                    btn.setAttribute('aria-expanded', 'false');
+                    drawer.setAttribute('aria-hidden', 'true');
+                    drawer.classList.remove('is-open');
+                });
+            });
+        })();
+
+        // ── Hero Ken-Burns trigger ───────────────────
+        (function () {
+            const hero = document.querySelector('.hero');
+            if (!hero) return;
+            // Slight delay allows paint to settle before CSS transition fires
+            setTimeout(function () {
+                hero.classList.add('is-visible');
+            }, 80);
+        })();
+
+        // ── Scroll reveal (IntersectionObserver) ────
+        (function () {
+            const targets = document.querySelectorAll('.reveal');
+            if (!targets.length) return;
+
+            const observer = new IntersectionObserver(
+                function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
+            );
+
+            targets.forEach(function (el) { observer.observe(el); });
+        })();
+    </script>
+
+</body>
+
+</html>

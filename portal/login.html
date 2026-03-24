@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Jamia-Tun-Noor Portal</title>
+
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .login-wrapper {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-cream);
+            padding: var(--gutter);
+        }
+
+        .login-card {
+            background: var(--color-white);
+            width: 100%;
+            max-width: 420px;
+            padding: var(--space-10);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            border-top: 6px solid var(--color-emerald);
+            text-align: center;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        .login-card__icon {
+            width: 70px;
+            height: 70px;
+            background: var(--color-emerald-mist);
+            color: var(--color-emerald);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin: 0 auto var(--space-5);
+            border: 2px solid var(--color-gold-pale);
+        }
+
+        .login-card h1 {
+            font-family: var(--font-display);
+            color: var(--color-emerald-deep);
+            margin-bottom: var(--space-2);
+        }
+
+        .login-card p {
+            color: var(--color-ink-muted);
+            font-size: var(--fs-sm);
+            margin-bottom: var(--space-8);
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: var(--space-6);
+        }
+
+        .form-label {
+            display: block;
+            font-size: var(--fs-xs);
+            font-weight: var(--fw-bold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-emerald);
+            margin-bottom: var(--space-2);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: var(--space-4);
+            border: 1.5px solid var(--color-cream-dark);
+            border-radius: var(--radius-md);
+            font-family: var(--font-english);
+            transition: var(--transition-base);
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--color-gold);
+            box-shadow: 0 0 0 4px var(--color-gold-pale);
+        }
+
+        .btn-submit {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-wrapper">
+        <main class="login-card">
+            <div class="login-card__icon" id="roleIcon">🔑</div>
+
+            <h1 id="loginTitle">Portal Login</h1>
+            <p id="loginSubtitle">Please enter your credentials to continue</p>
+
+            <form id="portalLoginForm">
+                <div class="form-group">
+                    <label class="form-label" for="userId">Official ID Number</label>
+                    <input type="text" id="userId" class="form-input" placeholder="e.g. S001 or T001" required>
+                </div>
+
+                <button type="submit" class="btn-portal btn-submit">
+                    Verify & Enter
+                </button>
+            </form>
+
+            <div style="margin-top: var(--space-8);">
+                <a href="index.html" class="footer__link" style="justify-content: center;">Change Portal Role</a>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

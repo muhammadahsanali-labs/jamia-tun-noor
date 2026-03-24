@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Selection | Jamia-Tun-Noor</title>
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .portal-entry {
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: var(--space-12) var(--gutter);
+        }
+
+        .portal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-8);
+            width: 100%;
+            max-width: 900px;
+            margin-top: var(--space-10);
+        }
+
+        .portal-card {
+            background: var(--color-white);
+            padding: var(--space-10);
+            border-radius: var(--radius-lg);
+            text-align: center;
+            border: 1px solid var(--color-cream-mid);
+            border-bottom: 5px solid var(--color-emerald);
+            transition: var(--transition-base);
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .portal-card:hover {
+            transform: translateY(-10px);
+            border-bottom-color: var(--color-gold);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .portal-card__icon {
+            font-size: 3rem;
+            margin-bottom: var(--space-4);
+            display: block;
+        }
+
+        .portal-card h3 {
+            color: var(--color-emerald-deep);
+            font-family: var(--font-display);
+            font-size: var(--fs-xl);
+            margin-bottom: var(--space-2);
+        }
+
+        .portal-card p {
+            color: var(--color-ink-muted);
+            font-size: var(--fs-sm);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="portal-entry">
+        <header style="text-align: center;">
+            <p class="section-label">Welcome to the Portal</p>
+            <h1 class="section-title">Select Your Identity</h1>
+            <span class="gold-divider gold-divider--center"></span>
+        </header>
+
+        <div class="portal-grid">
+
+            <a href="login.html?role=student" class="portal-card">
+                <span class="portal-card__icon">🎓</span>
+                <h3>Student Portal</h3>
+                <p>View your attendance, results, and scholarship status.</p>
+            </a>
+
+            <a href="login.html?role=teacher" class="portal-card">
+                <span class="portal-card__icon">🕌</span>
+                <h3>Teacher Portal</h3>
+                <p>Check your teaching logs and manage classroom attendance.</p>
+            </a>
+
+        </div>
+
+        <a href="../index.html" style="margin-top: 3rem; color: var(--color-emerald); font-weight: 600;">
+            ← Back to Homepage
+        </a>
+    </main>
+
+</body>
+
+</html>

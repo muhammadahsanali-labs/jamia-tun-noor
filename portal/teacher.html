@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard | Jamia-Tun-Noor</title>
+
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+        .dashboard-wrapper {
+            padding: var(--space-12) var(--gutter);
+            max-width: var(--container-max);
+            margin: 0 auto;
+        }
+
+        /* Header Card */
+        .profile-card {
+            background: var(--color-emerald-deep);
+            color: var(--color-white);
+            padding: var(--space-8);
+            border-radius: var(--radius-lg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid var(--color-gold);
+            margin-bottom: var(--space-10);
+        }
+
+        .profile-info h2 {
+            font-family: var(--font-display);
+        }
+
+        .profile-info p {
+            color: var(--color-gold-light);
+            letter-spacing: 1px;
+        }
+
+        /* Teacher Attendance Section [cite: 61, 149, 178] */
+        .teacher-stats {
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--color-white);
+            padding: var(--space-10);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            border: 1px solid var(--color-cream-mid);
+        }
+
+        .attendance-display {
+            font-size: 4rem;
+            font-weight: var(--fw-bold);
+            color: var(--color-emerald);
+            margin-block: var(--space-4);
+        }
+
+        .attendance-label {
+            font-size: var(--fs-md);
+            color: var(--color-ink-muted);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dashboard-wrapper">
+        <header class="profile-card">
+            <div class="profile-info">
+                <p>Assalam-o-Alaikum,</p>
+                <h2 id="teacherName">Mufti Abdullah</h2>
+                <span id="teacherID">Faculty ID: T001</span>
+            </div>
+            <a href="../index.html" class="btn-portal" style="background: transparent;">Logout</a>
+        </header>
+
+        <main class="teacher-stats">
+            <h3 class="section-label">Your Attendance Record</h3>
+            <div class="attendance-display">24/30</div>
+            <p class="attendance-label">Total Days Present</p>
+            <span class="gold-divider gold-divider--center"></span>
+            <p class="section-body" style="font-size: var(--fs-sm); margin-top: var(--space-4);">
+                This record is simulated for the current month. Detailed logs will be available in Phase 3[cite: 76,
+                197].
+            </p>
+        </main>
+    </div>
+
+</body>
+
+</html>
