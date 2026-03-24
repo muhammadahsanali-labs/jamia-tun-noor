@@ -63,6 +63,25 @@
             text-transform: uppercase;
             letter-spacing: 2px;
         }
+
+        /* Teacher Dashboard Responsiveness */
+        @media (max-width: 768px) {
+            .profile-card {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+                padding: var(--space-6);
+            }
+
+            .teacher-stats {
+                padding: var(--space-6);
+            }
+
+            .attendance-display {
+                font-size: 3rem;
+                /* Smaller text */
+            }
+        }
     </style>
 </head>
 

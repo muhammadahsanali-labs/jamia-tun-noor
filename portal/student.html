@@ -96,6 +96,47 @@
             border-radius: var(--radius-pill);
             font-weight: var(--fw-bold);
         }
+
+        /* Student Dashboard Responsiveness */
+        @media (max-width: 768px) {
+            .profile-card {
+                flex-direction: column;
+                /* Stack profile info and button */
+                text-align: center;
+                gap: 1.5rem;
+                padding: var(--space-6);
+            }
+
+            .profile-info {
+                text-align: center;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                /* Stack Attendance and Results */
+                gap: var(--space-6);
+            }
+
+            .attendance-circle {
+                width: 100px;
+                height: 100px;
+                /* Smaller circle */
+                font-size: var(--fs-lg);
+            }
+
+            /* Make table scrollable horizontally if too wide */
+            .result-table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+                font-size: 0.9rem;
+            }
+
+            .result-table th,
+            .result-table td {
+                padding: var(--space-3);
+            }
+        }
     </style>
 </head>
 
